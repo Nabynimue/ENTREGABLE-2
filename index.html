@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./src/css/styles.css" />
+        <script src="./src/scripts/main.js" defer></script>
+    </head>
+    <body>
+        <section class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-center">
+                <h1
+                    class="text-4xl font-bold text-center text-blue-500 mb-12 mt-12"
+                >
+                    Tienda Naby
+                </h1>
+                <div class="flex gap-2">
+                    <button
+                        id="clear-cart-header"
+                        class="bg-red-500 text-white px-4 py-2 rounded items-center gap-2"
+                    >
+                        Vaciar Carrito
+                    </button>
+                    <button
+                        id="cart-button"
+                        class="bg-blue-500 text-white px-4 py-2 rounded flex items-center gap-2"
+                    >
+                        Cart
+                        <span
+                            id="cart-count"
+                            class="bg-white text-blue-500 px-1 rounded-md"
+                            >0</span
+                        >
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div
+                    class="col-md-4 px-4 py-4 border rounded bg-blue-100 border border-blue-200 shadow-xl"
+                >
+                    <div class="w-full h-48 overflow-hidden">
+                        <img
+                            src="https://http2.mlstatic.com/D_NQ_NP_857920-MLA70745666275_072023-O.webp"
+                            alt="img"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold">Pantalon Negro</h3>
+                    <p class="text-sm mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quos.
+                    </p>
+                    <span>$100.000</span>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 ms-4 rounded add-to-cart"
+                        data-name="Pantalon Negro"
+                        data-price="100000"
+                        data-image="https://http2.mlstatic.com/D_NQ_NP_857920-MLA70745666275_072023-O.webp"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+                <div
+                    class="col-md-4 px-4 py-4 border rounded bg-blue-100 border border-blue-200 shadow-xl"
+                >
+                    <div class="w-full h-48 overflow-hidden">
+                        <img
+                            src="https://i.pinimg.com/736x/4a/ae/7c/4aae7cd763da84adffb78c046501e223.jpg"
+                            alt="img"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold">Blusa Roja</h3>
+                    <p class="text-sm mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quos.
+                    </p>
+                    <span>$60.000</span>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 ms-4 rounded add-to-cart"
+                        data-name="Blusa Roja"
+                        data-price="60000"
+                        data-image="https://i.pinimg.com/736x/4a/ae/7c/4aae7cd763da84adffb78c046501e223.jpg"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+                <div
+                    class="col-md-4 px-4 py-4 border rounded bg-blue-100 border border-blue-200 shadow-xl"
+                >
+                    <div class="w-full h-48 overflow-hidden">
+                        <img
+                            src="https://acdn.mitiendanube.com/stores/002/199/635/products/0e317074-b864-4a58-a4c2-dd193d241f70-59d8a1491229dc93bf17244561655831-1024-1024.png"
+                            alt="img"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold">Zapatos</h3>
+                    <p class="text-sm mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quos.
+                    </p>
+                    <span>$150.000</span>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 ms-4 rounded add-to-cart"
+                        data-name="Zapatos"
+                        data-price="150000"
+                        data-image="https://acdn.mitiendanube.com/stores/002/199/635/products/0e317074-b864-4a58-a4c2-dd193d241f70-59d8a1491229dc93bf17244561655831-1024-1024.png"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+                <div
+                    class="col-md-4 px-4 py-4 border rounded bg-blue-100 border border-blue-200 shadow-xl"
+                >
+                    <div class="w-full h-48 overflow-hidden">
+                        <img
+                            src="https://m.media-amazon.com/images/I/61xL7lY6yRL._AC_UF894,1000_QL80_.jpg"
+                            alt="img"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold">Sandalias</h3>
+                    <p class="text-sm mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quos.
+                    </p>
+                    <span>$95.000</span>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 ms-4 rounded add-to-cart"
+                        data-name="Sandalias"
+                        data-price="95000"
+                        data-image="https://m.media-amazon.com/images/I/61xL7lY6yRL._AC_UF894,1000_QL80_.jpg"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+                <div
+                    class="col-md-4 px-4 py-4 border rounded bg-blue-100 border border-blue-200 shadow-xl"
+                >
+                    <div class="w-full h-48 overflow-hidden">
+                        <img
+                            src="https://acdn.mitiendanube.com/stores/001/160/193/products/camisa-jean-clasica-mujer-modelodenim-1-3d7872aa60d5126ccf17246042906295-1024-1024.webp"
+                            alt="img"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold">Camisa de jean</h3>
+                    <p class="text-sm mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quos.
+                    </p>
+                    <span>$68.000</span>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 ms-4 rounded add-to-cart"
+                        data-name="Camisa de jean"
+                        data-price="68000"
+                        data-image="https://acdn.mitiendanube.com/stores/001/160/193/products/camisa-jean-clasica-mujer-modelodenim-1-3d7872aa60d5126ccf17246042906295-1024-1024.webp"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+                <div
+                    class="col-md-4 px-4 py-4 border rounded bg-blue-100 border border-blue-200 shadow-xl"
+                >
+                    <div class="w-full h-48 overflow-hidden">
+                        <img
+                            src="https://tequierofashion.com/cdn/shop/products/product-image-783659311_2048x.jpg?v=1571720318"
+                            alt="img"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold">Campera Abrigo</h3>
+                    <p class="text-sm mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quos.
+                    </p>
+                    <span>$235.000</span>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 ms-4 rounded add-to-cart"
+                        data-name="Campera Abrigo"
+                        data-price="235000"
+                        data-image="https://tequierofashion.com/cdn/shop/products/product-image-783659311_2048x.jpg?v=1571720318"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto">
+            <div
+                id="cart-container"
+                class="mt-8 p-8 border rounded border-gray-600 hidden"
+            ></div>
+        </section>
+    </body>
+</html>
